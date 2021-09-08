@@ -14,11 +14,6 @@ pipeline {
           steps {
             sh './jenkins/run-tests.sh'
           }
-          post {
-            always {
-              junit 'target/surefire-reports/**/TEST*.xml'
-            }
-          }
       }
     stage('Confirm Deploy') {
       when {
