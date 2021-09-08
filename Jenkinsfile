@@ -7,7 +7,7 @@ pipeline {
             sh 'ls -l'
             sh 'ls -l ./jenkins/build.sh'
             sh 'ls -l jenkins/build.sh'
-            sh "./jenkins/build.sh"
+            sh './jenkins/build.sh'
           }
         }
     stage('Test') {
