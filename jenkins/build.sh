@@ -1,6 +1,5 @@
-#!/usr/bin/env bash
+#!/usr/bin/sh
 
 git clean -xfd
-echo "i am here"
 env
 mvn -B -DskipTests clean package
