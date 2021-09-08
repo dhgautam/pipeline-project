@@ -8,7 +8,7 @@ pipeline {
         }
     stage('Test') {
           steps {
-            sh './jenkins/test-backend.sh'
+            sh './jenkins/run-tests.sh'
           }
           post {
             always {
