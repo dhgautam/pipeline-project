@@ -5,6 +5,8 @@ pipeline {
           steps {
             sh 'pwd'
             sh 'ls -l'
+            sh 'ls -l ./jenkins/build.sh'
+            sh 'ls -l jenkins/build.sh'
             sh './jenkins/build.sh'
           }
         }
