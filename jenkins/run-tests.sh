@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/bin/sh
 
 env
 mvn -B -DtestFailureIgnore test
