@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('Build') {
           steps {
+            sh 'pwd'
+            sh 'ls -l'
             sh './jenkins/build.sh'
           }
         }
     stage('Test') {
           steps {
-            sh 'pwd'
-            sh 'ls -l'
             sh './jenkins/run-tests.sh'
           }
           post {
