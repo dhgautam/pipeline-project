@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('welcome') {
             steps {
-                helloDevOpsWorld(name: 'Pipeline Workshop Attendees')
+                helloDevOpsWorld(name: 'Shared Library Workshop Attendees')
             }
         }
     }
