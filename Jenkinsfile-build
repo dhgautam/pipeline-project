@@ -3,10 +3,7 @@ pipeline {
   stages {
     stage('Build') {
           steps {
-            sh 'pwd'
-            sh 'ls -l'
-            sh 'ls -l ./jenkins/build.sh'
-            sh 'ls -l jenkins/build.sh'
+            echo "Starting the build"
             sh './jenkins/build.sh'
           }
         }
