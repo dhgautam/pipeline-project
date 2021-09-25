@@ -5,7 +5,7 @@ pipeline {
     stage('Build') {
           steps {
             echo "Starting the build"
-            runBuild(name: "build.sh", arg: "compile")
+            runBuild(name: "build.sh", arg: "package")
           }
         }
     stage('Test') {
