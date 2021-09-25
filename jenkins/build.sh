@@ -3,4 +3,4 @@
 git clean -xfd
 
 # env
-mvn -B -DskipTests clean package
+mvn -B -DskipTests clean compile
