@@ -17,7 +17,7 @@ pipeline {
         branch 'main'
       }
       steps {
-        timeout(time: 3, unit: 'MINUTES' ) {
+        timeout(time: 1, unit: 'MINUTES' ) {
           input(message: "Okay to Deploy to Staging?", ok: "Let's Do it!")
         }
       }
