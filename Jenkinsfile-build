@@ -27,11 +27,11 @@ pipeline {
         branch 'main'
       }
       steps {
-        sh "./scripts/deploy.sh ${params.DEPLOY_TO}"
+        sh "./scripts/deploy.sh ${params.deployTo}"
       }
     }
   }
   parameters {
-    string(name: 'DEPLOY_TO', defaultValue: 'dev', description: '')
+    string(name: 'deployTo', defaultValue: 'dev', description: '')
   }
 }
