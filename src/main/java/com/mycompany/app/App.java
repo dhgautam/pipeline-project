@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package com.aplima.app;
 
 /**
  * Hello DevOps world!
