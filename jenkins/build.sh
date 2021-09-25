@@ -2,5 +2,5 @@
 
 git clean -xfd
 
-env
+# env
 mvn -B -DskipTests clean package
