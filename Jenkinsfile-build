@@ -4,12 +4,12 @@ pipeline {
     stage('Build') {
           steps {
             echo "Starting the build"
-            sh './jenkins/build.sh compile'
+            sh './scripts/build.sh compile'
           }
         }
     stage('Test') {
           steps {
-            sh './jenkins/run-tests.sh'
+            sh './scripts/run-tests.sh'
           }
       }
     stage('Confirm Deploy') {
@@ -27,7 +27,7 @@ pipeline {
         branch 'main'
       }
       steps {
-        sh "./jenkins/deploy.sh ${params.DEPLOY_TO}"
+        sh "./scripts/deploy.sh ${params.DEPLOY_TO}"
       }
     }
   }
