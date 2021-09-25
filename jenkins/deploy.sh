@@ -1,5 +1,5 @@
 #!/bin/sh
 
-env
+# env
 
 echo "Deploying to: $1"
