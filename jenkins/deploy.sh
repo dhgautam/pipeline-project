@@ -2,4 +2,4 @@
 
 env
 
-echo "Deploying: $1"
+echo "Deploying to: $1"
