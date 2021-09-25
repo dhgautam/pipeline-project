@@ -6,7 +6,6 @@ pipeline {
           steps {
             echo "Starting the build"
             runBuild(name: "build.sh")
-
           }
         }
     stage('Test') {
