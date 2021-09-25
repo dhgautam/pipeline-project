@@ -1,6 +1,6 @@
 #!/bin/sh
 
-env
+# env
 
 mvn -B -DtestFailureIgnore test
 exit 0
