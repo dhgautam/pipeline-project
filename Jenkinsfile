@@ -19,7 +19,7 @@ pipeline {
       }
       steps {
         timeout(time: 3, unit: 'MINUTES' ) {
-          input(message: "Okay to Deploy to Staging?", ok: "Let's Do it!")
+          input(message: "Okay to Deploy to Staging?", ok: "Let's roll!")
         }
       }
     }
