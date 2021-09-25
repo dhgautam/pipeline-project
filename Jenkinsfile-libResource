@@ -10,7 +10,7 @@ pipeline {
         }
     stage('Test') {
           steps {
-            sh './jenkins/run-tests.sh'
+            sh './scripts/run-tests.sh'
           }
       }
     stage('Confirm Deploy') {
@@ -28,11 +28,11 @@ pipeline {
         branch 'main'
       }
       steps {
-        sh "./jenkins/deploy.sh ${params.DEPLOY_TO}"
+        sh "./scripts/deploy.sh ${params.deployTo}"
       }
     }
   }
   parameters {
-    string(name: 'DEPLOY_TO', defaultValue: 'dev', description: '')
+    string(name: 'deployTo', defaultValue: 'dev', description: '')
   }
 }
