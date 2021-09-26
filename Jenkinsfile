@@ -1,10 +1,11 @@
+@Library('shared-library') _
 pipeline {
   agent any
   stages {
     stage('Build') {
           steps {
             echo "Starting the build"
-            sh './scripts/build.sh compile'
+            runBuild(name: "build.sh", arg: "package")
           }
         }
     stage('Test') {
@@ -17,8 +18,8 @@ pipeline {
         branch 'main'
       }
       steps {
-        timeout(time: 1, unit: 'MINUTES' ) {
-          input(message: "Okay to Deploy to Staging?", ok: "Let's Do it!")
+        timeout(time: 3, unit: 'MINUTES' ) {
+          input(message: "Okay to Deploy to Staging?", ok: "Let's roll!")
         }
       }
     }
