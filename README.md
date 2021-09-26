@@ -2,6 +2,7 @@
 
 * You can create a Jenkins Docker image for this workshop by using the Dockerfile stored in this repository.
 ```bash
+cd infra
 docker build -t workshop-jenkins:1.0 .
 ```
 * Launch newly created Docker image.
